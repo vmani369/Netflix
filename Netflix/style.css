@@ -1,0 +1,438 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    user-select: none;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/bg1.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.logo {
+    width: 150px;
+    cursor: pointer;
+}
+
+nav button {
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    background-color: #db0001;
+    color: #fff;
+    padding: 7px 10px;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.language {
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 7px 10px;
+}
+
+.language img {
+    width: 10px;
+    margin-left: 10px;
+}
+
+.headContainer {
+    position: absolute;
+    top: 40%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 100px;
+
+}
+.headContainer h1{
+    font-size: 38px;
+    line-height: 70px;
+    font-weight: 600;
+    position: relative;
+    text-align: none;
+}
+.headContainer h3{
+    font-weight: 400;
+    margin-bottom: 20px;
+
+}
+.email-signup{
+    background: linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0,0.5));
+    border-radius: 4px;
+    display: flex;
+    /* width: 500px; */
+    align-items: center;
+    margin-top:30px ;
+    overflow: hidden;
+}
+.email-signup input{
+    flex: 1;
+
+    border: 1px solid #fff;
+    outline: 0;
+    color: #fff;
+    margin-left: 0px;
+    padding: 15px 30px;
+    background: transparent;
+  
+}
+
+.email-signup button{
+    background: #db0001;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    padding:15px 30px ;
+}
+hr{
+    width: 100%;
+    border: 2px solid rgb(66, 66, 66);
+}
+.set1 .set1-text h1{
+    position: relative;
+    top: -150px;
+
+    font-size: 50px;
+    text-align: center;
+}
+.set1 .set1-text p{
+    font-size: 25px;
+    position: relative;
+    top: -130px;
+    margin-left: 100px;
+
+}
+.set1 img{
+    width: 600px;
+    float: right;
+}
+.set1 video{
+    position: relative;
+    top: 60px;
+    left: 50%;
+    width: 500px;
+    z-index: -9999;
+}
+
+.set2 img{
+    float: left;
+    width: 400px;
+    margin-left: 100px;
+    
+}
+.set2 .set2-text h1{
+    font-size: 50px;
+    font-weight: bold;
+    margin-right: 200px;
+    margin-top: 80px;
+}
+.set2 .set2-text p{
+    font-size: 24px;
+    
+    padding: 13px;
+    margin-right: 100px;
+}
+.set3 {
+    margin: 100px 115px;
+    width: 600px;
+    position: relative;
+    float: right;
+    height: 55vh;
+}
+
+.pics {
+    position: relative;
+}
+
+.pics img,
+.pics video {
+    width: 100%;
+    height: auto;
+}
+
+.pics video {
+    width: 380px;
+    position: absolute;
+    top: 40px;
+    left: 110px;
+    object-fit: cover;
+    z-index: -1; 
+}
+.set3-text{
+    text-align: center ;
+    position: relative;
+    top: 200px;
+
+}
+.set3-text h1{
+    font-size: 50px;
+
+}
+.set3-text p{
+    margin-top: 50px;
+    font-size: 28px;
+}
+.set4 img{
+    width: 600px;
+    margin-left: 100px;
+}
+.set4-text{
+    width: 500px;
+    float: right;
+    position: relative;
+    top: 100px;
+  
+}
+
+.set4-text h1{
+    font-size: 40px;
+    padding: 20px;
+}
+
+.set4-text p{
+    font-size:25px ;
+    padding: 20px;
+}
+
+
+#loading {
+    background: #000 url("./images/ezgif-3-8496d80c54.gif") no-repeat center center;
+    background-size: 100%; 
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100000;
+    top: 0; 
+    left: 0; 
+}
+
+#content {
+    display: none;
+    height: 100vh;
+    width: 100%;
+   
+    z-index: 99999;
+    background-color: white;
+    text-align: center;
+ 
+    box-sizing: border-box;
+}
+.set5{
+    height: auto;
+    padding-bottom: 30px;
+    text-align: left;
+}
+.set5 h1{
+    text-align: center;
+    padding: 20px;
+}
+.set5 details {
+    display: block;
+    margin: 10px 0;
+    width: 600px;
+    margin-left: 400px;
+    background-color: #333;
+    font-size: 20px;
+  }
+  
+  .set5 summary {
+    cursor: pointer;
+    list-style-type: none;
+    border: 1px solid #fff;
+    padding: 25px;
+    position: relative;
+  }
+  
+  .set5 summary:hover{
+    background-color: rgb(97, 96, 96);
+    color: #fff;
+}
+
+  .set5 summary::before {
+    content: "+";
+    color: #fff;
+    position: absolute;
+    left: 93%;
+    top: 35px;
+    font-size: 1.6rem;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease;
+  }
+  
+  .set5 details[open] summary::before {
+    content: "x";
+  
+  }
+  
+  .set5 p {
+    margin: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 21px;
+    display: none;
+  }
+  
+  .set5 details[open] p {
+    display: block;
+  }
+  .headContainer1 {
+    position: relative;
+    margin-top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    padding-bottom:30px ;
+}
+
+.headContainer1 p {
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 600;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.email-signup1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    border-radius: 4px;
+    display: flex;
+    width: 500px;
+    align-items: center;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.email-signup1 input {
+    flex: 1;
+    border: none;
+    outline: 0;
+    color: #000;
+    padding: 18px 30px;
+    background: #fff;
+}
+
+.email-signup1 button {
+    background: #db0001;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 18px 30px;
+}
+
+.footer{
+    text-align: left;
+    margin: 20px 85px;
+    height: auto ;
+    padding-bottom: 50px;
+}
+
+.footer p{
+    font-size: 20px;
+}
+
+.footer p span{
+    color:grey;
+    font-size: 15px;
+}
+
+.footer ul {
+   list-style: none;
+   padding: 40px;
+   display: inline-flex;
+   flex-direction: column;
+}
+.footer li {
+    padding: 10px;
+}
+.footer li a{
+    color: #fff;
+    
+}
+
+.language-bar {
+    position: relative;
+    width: 150px;
+    border: 1px solid #fff;
+    overflow: hidden;
+}
+
+.language-bar select {
+    width: 100%;
+    padding: 15px 40px 15px 20px;
+    background: transparent;
+    color: #fff;
+    border: none; 
+    appearance: none; 
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+    cursor: pointer;
+}
+
+.language-bar::after {
+    content: "";
+    background-image: url('./images/down-icon.png') ; 
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    width: 20px;
+    height: 8px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; 
+}
+
+@media (max-width:500px){
+    #loading{
+        display: none;
+    }
+    .header {
+        max-height : auto !important;
+        min-height:auto! important;
+        }
+    .header button{
+        height:50px ;
+        font-size:12px ;
+    }
+
+    .set1 {
+        max-height: auto !important;
+        max-width: auto !important;
+    }
+    
+    .set1 img {
+        width: 400px;
+        margin-top: 36%;
+        padding: 0;
+    }
+    
+   
+}
